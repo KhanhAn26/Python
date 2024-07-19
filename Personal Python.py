@@ -1,11 +1,4 @@
 price=0
-
-
-
-
-
-
-
 def Homepage():
     global price
     print("Welcome")
@@ -46,6 +39,8 @@ def Selectbook():
             print("How much do you want to pay?")
         case "D":
             print("How much do you want to pay?")
+        case _:
+            print("Invalid selection")
 
 def Payment():
       bill=int(input())
