@@ -1,0 +1,74 @@
+import sys
+a=0
+b=0
+c=0
+d=0
+print("Welcome to the Sorting of Hogwarts! We will be asking you some questions. For each answer, you will get points. At the end of the question, the added score will decide which house you are going into! Cheers!")
+Q1=input(''' Q1\t Do you like Dawn or Dusk?
+1) Dawn
+2) Dusk
+Your choice is:  ''')
+if Q1 == "1":
+   a+=1
+   b+=1
+elif Q1 == "2":
+   c+=1
+   d+=1
+else:
+  print("Wrong input. Try again!")
+  sys.exit()
+Q2=input('''Q2 \t When I'm dead, I want people to remember me as:
+  1) The Good
+  2) The Great
+  3) The Wise
+  4) The Bold
+  Your choice is:  ''' )
+if Q2=="1":
+    c+=2
+elif Q2=="2":
+    d+=2
+elif Q2=="3":
+    b+=2
+elif Q2=="4":
+    a+=2
+else:
+    print("Wrong input. Try again!")
+    sys.exit()
+Q3=input('''Q3) \t Which kind of instrument most pleases your ear?
+  1) The violin
+  2) The trumpet
+  3) The piano
+  4) The drum 
+  Your choice is:   ''')
+if Q3 == "1":
+    d+=4
+elif Q3 == "2":
+    c+=4
+elif Q3 == "3":
+    b+=4
+elif Q3 == "4":
+    a+=4
+else:
+  print("Wrong input. Try again!")
+  sys.exit()
+Gryffindor_score = a
+Ravenclaw_score = b
+Hufflepuff_score = c
+Slytherin_score=d
+print("Now that you have finished, let's see your score!")
+print("Gryffindor score:   ", Gryffindor_score)
+print("Ravenclaw score:   ",Ravenclaw_score)
+print("Hufflepuff score:   ",Hufflepuff_score)
+print("Slytherin score:   ",Slytherin_score)
+scores={
+"Gryffindor": Gryffindor_score,
+"Ravenclaw": Ravenclaw_score,
+"Hufflepuff": Hufflepuff_score,
+"Slytherin": Slytherin_score}
+sorted_house=max(scores,key=scores.get)
+print(f"Congratulations! Your house is: {sorted_house}!", "I wish you have a good year!")
+
+
+
+
+
