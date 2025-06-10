@@ -1,0 +1,10 @@
+print("Welcome to Fizz Buzz! The rules are as follow: For multiple of 3, you have to answer 'Fizz', and for multiples of 5, you have to answer 'Buzz'. And for multiples of 3 and 5, you have to answer 'FizzBuzz'. Have fun!")
+for i in range(1,101):
+  if i % 3 == 0 and i % 5 == 0:
+    print("FizzBuzz")
+  elif i % 3 == 0:
+    print("Fizz")
+  elif i % 5 == 0:
+    print("Buzz")
+  else:
+    print(i)
