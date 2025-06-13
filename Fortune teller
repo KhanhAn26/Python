@@ -1,0 +1,19 @@
+input("What is your current concern?  ")
+import random
+
+def fortune():
+  random_fortune = random.randint(1,8)
+  fortune_results = {
+    "Don't pursue happiness - create it." : 1,
+    "All things are difficult before they are easy." : 2,
+    "The early bird gets the worm, but the second mouse gets the cheese." : 3,
+    "Someone in your life needs a letter from you." : 4,
+    "Don't just think. Act!" : 5,
+    "Your heart will skip a beat." : 6,
+    "The fortune you search for is in another cookie." : 7,
+    "Help! I'm being held prisoner in a Chinese bakery!" : 8
+  }
+  for message, number in fortune_results.items():
+    if number == random_fortune:
+      return message
+print(fortune())
