@@ -1,0 +1,10 @@
+class City():
+  def __init__(self, name, country, population, landmarks):
+    self.name = name
+    self.country = country
+    self.population = population
+    self.landmarks = landmarks
+Ho_chi_minh = City("Ho Chi Minh City", "Vietnam", 22552900 , "Cho Ben Thanh")
+Kyoto = City('Kyoto','Japan',1460000,'Kinkakuji')
+print(vars(Ho_chi_minh))
+print(vars(Kyoto))
