@@ -1,0 +1,36 @@
+class Pokemon():
+  def __init__(self, entry, name, types, description, is_caught, level, region, height, weight):
+    self.entry = entry
+    self.name = name
+    self.types = types
+    self.description = description
+    self.is_caught = is_caught
+    self.level = level
+    self.region = region
+    self.height = height
+    self.weight = weight
+  
+  def speak(self):
+    print(str(self.name),str(self.name),'!')
+  def display_details(self):
+    print('Entry Number:  ', self.entry)
+    print('Name:  ', self.name)
+    print('Type:',  self.types)
+    print('Description:  ', self.description)
+    if self.is_caught == True:
+      print(str(self.name) + ' has already been caught!')
+    else:
+      print(str(self.name) + " can't be caught. Please try again")
+    print('Level:  ', self.level)
+    print('Region:  ', self.region)
+    print('Height:  ', self.height)
+    print('Weight:  ', self.weight)
+Pikachu = Pokemon(25, 'Pikachu', 'Electric', 'It has small electric sacs on both its cheeks. If threatened, it looses electric charges from the sacs.', True, 5, 'Kanto',0.4, 6)
+Victini = Pokemon(494, 'Victini', 'Psychic & Fire', 'This Pokémon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter.', False, 7, 'Unova', 0.4, 4)
+Mewtwo = Pokemon(150, 'Mewtwo', 'Psychic', 'Mewtwo is a Psychic-type Pokémon known for its powerful psychic abilities and artificial creation.', False, 9, 'Kanto', 2.0, 122.0)
+Pikachu.speak()
+Pikachu.display_details()
+Victini.speak()
+Victini.display_details()
+Mewtwo.speak()
+Mewtwo.display_details()
