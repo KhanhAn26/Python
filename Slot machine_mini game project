@@ -1,0 +1,18 @@
+import random
+def play():
+  flag = False
+  while not flag: 
+   answer_1 = input("Welcome to Slot Machine! If you hit three sevens, you win! If you don't, please continue playing until you do by typing 'Y', 'N' to stop. Type 'Play' to start: ")
+   results = ['🍒',' 🍇', '🍉', '7️⃣']
+   two_values = random.choices(results, k=3)
+   print(two_values)
+   if two_values == '7️⃣':
+    print("Jackpot! 💰")
+    break
+   else:
+    answer = input("Thanks for playing! Do you want to try again? ")
+    if answer == 'N':
+      break
+    elif answer == 'Y':
+     flag = False
+play()
