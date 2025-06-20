@@ -1,0 +1,9 @@
+Size = 
+SWITCH(
+    TRUE(),
+    Building[Height m] < 400, "Tiny",
+    Building[Height m] >= 400 && Building[Height m]<500, "Small",
+    Building[Height m] >=500 && Building[Height m]<600, "Medium",
+    Building[Height m] >=600 && Building[Height m]<700, "Big",
+    Building[Height m] >=700, "Massive"
+    )
