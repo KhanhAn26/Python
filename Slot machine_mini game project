@@ -8,8 +8,8 @@ def play():
    print(two_values)
    if two_values == '7️⃣':
     print("Jackpot! 💰")
-    break
    else:
+    break
     answer = input("Thanks for playing! Do you want to try again? ")
     if answer == 'N':
       break
