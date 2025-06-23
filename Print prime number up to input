@@ -1,0 +1,9 @@
+x = int(input("Enter an integer from 2 to 100:  "))
+for i in range(2, x+1):
+  flag = True
+  for y in range(2, int(i ** 0.5) + 1):
+    if i % y == 0:
+      flag = False
+      break
+  if flag:
+    print(i)
