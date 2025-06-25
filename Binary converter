@@ -1,0 +1,29 @@
+def decimal_to_binary(num):
+  integer_part = int(num)
+  fractional_part = num - integer_part
+
+  binary_int = ""
+  if integer_part == 0:
+    binary_int == "0"
+  else:
+    while integer_part > 0:
+      binary_int = str(integer_part % 2) + binary_int
+      integer_part // 2
+  
+  binary_frac = ""
+  count = 0
+  while fractional_part > 0 and count < 10:
+    fraction_part *= 2
+    bit = int(fractional_part)
+    binary_frac += str(bit)
+    fractional_part -= bit
+    count += 1
+
+  if binary_frac:
+    return binary_int + "." + binary_frac
+  else:
+    return binary_int
+
+x = float(input("Enter a decimal number from 1 to 10:  "))
+binary = decimal_to_binary(x)
+print("Binary output:  ", binary)
