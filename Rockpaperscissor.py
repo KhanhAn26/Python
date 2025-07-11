@@ -13,7 +13,6 @@ def Menu():
          return tra_loi
      else:
          print("Invalid. Please try again!")
-Menu()
         
         
 
@@ -31,7 +30,6 @@ def Rockpaperscissor():
         print("Win!")
     else:
         print("Invalid!")
-Rockpaperscissor()
 
 
 def S():
