@@ -1,0 +1,40 @@
+player = [{
+  "name": "Cristiano Ronaldo",
+  "position": "Forward",
+  "Jersey number": "7",
+  "stats": {
+    "yards gained": 0,
+    "touchdowns": 0
+  }
+},
+{
+  "name": 'LeBron James',
+  "position": 'Power Forward, Small Forward',
+  'Jersey number': "23",
+  "stats": {
+    "yards gained": 3,
+    "touchdowns": 4
+  }
+}]
+for person in player:
+  print(f'{person["name"]} plays as {person["position"]}')
+for person in player: 
+  if person["name"] == "Cristiano Ronaldo":
+    person["stats"]["yards gained"] += 2
+    person["stats"]["touchdowns"] += 1
+  
+for people in player:
+  print(f'{people["name"]} have stats: {people["stats"]}')
+
+total_yards = 0
+for person in player:
+  total_yards += person["stats"]["yards gained"]
+  
+average_yards = total_yards / len(player)
+print(f'The average yards gaines is: {average_yards}')
+
+total_touchdown = 0
+for person in player:
+  total_touchdown += person["stats"]["touchdowns"]
+average_touchdown = total_touchdown / len(player)
+print(f'The average touchdown is: {average_touchdown}')
